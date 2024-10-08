@@ -4,6 +4,7 @@ import prisma from '@/config/db';
 import { subscriptionPlans } from '@/constants';
 import React from 'react';
 import BuySubScription from './_components/buy-subscription';
+export const dynamic = 'force-dynamic';
 
 async function SubscriptionsPage() {
 	const mongoUser = await (await GetCurrentUserFromMongoDB()).data;
